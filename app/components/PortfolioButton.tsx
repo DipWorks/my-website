@@ -1,12 +1,21 @@
-import { Button } from '@radix-ui/themes'
-import React from 'react'
+"use client";
+import { Button } from "@radix-ui/themes";
+import { useRouter } from "next/navigation";
+import React from "react";
 
 const PortfolioButton = () => {
-  return (
-    <div className='mt-4'>
-        <Button color='gray' radius='large'>View Portfolio</Button>
-    </div>
-  )
-}
+  const router = useRouter();
+  const handleButtonClick = () => {
+    router.push("/portfolio");
+  };
 
-export default PortfolioButton
+  return (
+    <div className="mt-4">
+      <Button color="gray" radius="large" onClick={handleButtonClick}>
+        View Portfolio
+      </Button>
+    </div>
+  );
+};
+
+export default PortfolioButton;
