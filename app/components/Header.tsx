@@ -19,7 +19,10 @@ const Header = () => {
           >
             The Coding Vibes
           </Link>
-          <Text className="text-slate-100"><span className="text-xs italic tracking-widest">with</span> Dipendra Bhandari</Text>
+          <Text className="text-slate-100">
+            <span className="text-xs italic tracking-widest">with</span>{" "}
+            Dipendra Bhandari
+          </Text>
         </div>
       </div>
     </div>
