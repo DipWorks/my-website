@@ -4,7 +4,7 @@ import { lobsterTwoFont } from "../util/fonts";
 
 const Qualifications = () => {
   return (
-    <Card className="ml-4">
+    <Card className="lg:ml-4 mb-3">
       <Heading className={`${lobsterTwoFont.className} pb-4 pt-2`}>
         Qulifications
       </Heading>

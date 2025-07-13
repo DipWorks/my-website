@@ -9,7 +9,7 @@ import Projects from "./Projects";
 const Portfolio = () => {
   return (
     <Card className="mr-4 flex flex-col items-center text-center">
-      <div className="flex flex-row">
+      <div className="flex flex-col md:flex-row">
         <Experience />
         <ProfileImage />
         <Qualifications />
