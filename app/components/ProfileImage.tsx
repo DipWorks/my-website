@@ -4,7 +4,7 @@ import React from "react";
 
 const ProfileImage = () => {
   return (
-    <div className="flex flex-col items-center pb-3">
+    <div className="flex flex-col items-center pb-3 md:pb-1">
       <div className="relative w-50 h-50 md:w-75 md:h-75 lg:w-100 lg:h-100 rounded-full overflow-hidden mt-4">
         <Image
           src="/profile.png"

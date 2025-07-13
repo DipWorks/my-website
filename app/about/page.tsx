@@ -2,6 +2,7 @@ import { Blockquote, Card } from "@radix-ui/themes";
 import React from "react";
 import { Metadata } from "next";
 import ProfileImage from "../components/ProfileImage";
+import PortfolioButton from "../components/PortfolioButton";
 
 export const metadata: Metadata = {
   title: "Dipendra Bhandari",
@@ -23,6 +24,7 @@ const AboutPage = () => {
         our life so much easier if somebody wrote about the before. 😊
       </Blockquote>
       <ProfileImage />
+      <div className="flex flex-col items-center"><PortfolioButton/></div>
     </Card>
   );
 };
