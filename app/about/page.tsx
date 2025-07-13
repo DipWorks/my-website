@@ -11,30 +11,13 @@ const AboutPage = () => {
   return (
     <Card className="mr-4 flex flex-col items-center text-center">
       <Blockquote size="4" color="orange" highContrast className="mb-6">
-        My name is <strong>Dipendra Bhandari</strong> and I am{" "}
+        My name is <strong>Dipendra Bhandari</strong> and I am a{" "}
         <strong>Senior Software Engineer </strong>
-        based in Sydney by profession and I am also a passionate Manchester
-        United fan. I decided to build this web application as a way of giving
-        something back to the MUFC fan community. I want this page to be a{" "}
-        <strong>central hub for all the Manchester United fans </strong> around
-        the globe. I plan to make those features available to MUFC fans that I
-        wish were available as a keen Manchester United supporter myself.
+        based in Sydney, Australia.
         <br />
-        <br /> For a start, you can read all the latest news from all the
-        reliable sources about our football club in one place. I am planning to
-        add features like forums which allow you to engage in discussions if you
-        want by posting your own opinios about anything related to MUFC while
-        being able to show your support and reaction to any other content
-        diplayed on this web page. And also, you can get involved by voting in
-        polls about different topics concerning MUFC that will be conducted
-        regularly and see their the results.
-        <br />
-        And finally, you will be able to read my own views on different topics
-        regarding MUFC via blog posts. I am planning to add features one by one
-        to this app, so stay tuned in. Based on the reaction of the community
-        and demand of these features I will prioritise them keep growing this
-        web page to make it more and more useful for us{" "}
-        <strong>Red Devils </strong> around the globe.
+        <br /> 
+        I decided to create this website to write blogs related to software development and software engineering in general. I try to shed light on simple things that everybody else has ignored
+        but that are still making life of Software Engineer difficult. I write articles or tutorials on stuff that is hard to find on the internet but would make our life so much easier if somebody wrote about the before. 😊
       </Blockquote>
 
       <div className="flex flex-col items-center">
