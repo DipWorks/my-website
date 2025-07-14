@@ -1,0 +1,45 @@
+---
+title: "Heaps Explained for Interviews"
+author: "chatGPT"
+description: "Master Heaps for technical interviews. Learn how heaps work, common operations, and frequently asked questions with examples."
+date: "2025-07-13"
+tags:
+  ["data structures", "heap", "priority queue", "algorithms", "interview prep"]
+---
+
+# 🛠️ Heaps for Interviews
+
+A **Heap** is a special tree-based data structure that satisfies the **heap property**:
+
+- **Min Heap**: Parent node ≤ its children
+- **Max Heap**: Parent node ≥ its children
+
+Heaps are commonly used to implement **priority queues**, **scheduling**, and for efficient **selection problems** like finding the _k smallest/largest_ elements.
+
+---
+
+## 🌳 Structure and Properties
+
+- Binary Heap is a **complete binary tree** (all levels filled left to right).
+- Typically implemented using an array:
+  - For index `i`:
+    - `left = 2i + 1`
+    - `right = 2i + 2`
+    - `parent = Math.floor((i - 1) / 2)`
+
+---
+
+## 🔄 Types of Heaps
+
+### ✅ Min Heap
+
+Smallest element is at the root.
+
+```ts
+// Example: [1, 3, 6, 5, 9, 8]
+       1
+     /   \
+    3     6
+   / \   /
+  5   9 8
+```
