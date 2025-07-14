@@ -13,7 +13,7 @@ const MufcFanHubButton = () => {
         >
           Check Live Application
         </a>
-        <ExternalLink className="w-4 h-4"/>
+        <ExternalLink className="w-4 h-4" />
       </Button>
     </div>
   );
