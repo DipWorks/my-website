@@ -24,7 +24,9 @@ const AboutPage = () => {
         our life so much easier if somebody wrote about the before. 😊
       </Blockquote>
       <ProfileImage />
-      <div className="flex flex-col items-center"><PortfolioButton/></div>
+      <div className="flex flex-col items-center">
+        <PortfolioButton />
+      </div>
     </Card>
   );
 };
