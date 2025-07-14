@@ -17,7 +17,7 @@ const Skills = () => {
       <Blockquote>
         <strong>Frameworks </strong>
         <br />
-        SPRING BOOT, REACT, Next.Js, Node.js
+        SPRING BOOT, REACT, Next.js, Node.js
       </Blockquote>
       <br />
       <Blockquote>
