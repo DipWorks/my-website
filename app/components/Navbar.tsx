@@ -11,7 +11,7 @@ const Navbar = () => {
         <TabNav.Link href="/blogs" active={pathname == "/blogs"}>
           Blogs
         </TabNav.Link>
-        <TabNav.Link href="/blogs" active={pathname == "/blogs"}>
+        <TabNav.Link href="/interview-prep" active={pathname == "/interview-prep"}>
           Interview Preparation
         </TabNav.Link>
         <TabNav.Link href="/about" active={pathname == "/about"}>
