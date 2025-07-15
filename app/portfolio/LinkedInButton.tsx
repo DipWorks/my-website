@@ -5,7 +5,7 @@ import React from "react";
 const LinkedInButton = () => {
   return (
     <div className="mt-4">
-      <Button color="blue" variant="solid" radius="large">
+      <Button color="sky" variant="solid" radius="large">
         <a
           href="https://www.linkedin.com/in/dipendra-bhandari-382a061a5/"
           target="_blank"
