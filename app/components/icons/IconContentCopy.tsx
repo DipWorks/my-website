@@ -1,3 +1,5 @@
+import { JSX } from "react";
+
 type Props = React.SVGAttributes<SVGElement>;
 
 const IconContentCopy = (props: Props): JSX.Element => {

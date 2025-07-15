@@ -6,17 +6,14 @@ import { Frontmatter } from "@/types";
 import { getMarkdownFromSlug } from "@/utils/file";
 import { components } from "@/mdxComponents";
 import CustomRemoteMdx from "@/components/CustomRemoteMdx";
-import { getSlug } from "@/utils";
-
-type Props = {
-  params: { slug: string };
-};
 
 const baseDir = "interview-prep";
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const slug = await getSlug(params);
-  const file = await getMarkdownFromSlug(slug, baseDir);
+export async function generateMetadata(props: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const params = await props.params;
+  const file = await getMarkdownFromSlug(params.slug, baseDir);
 
   if (!file) return {};
 
@@ -27,9 +24,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function Post({ params }: Props) {
-  const slug = await getSlug(params);
-  const result = await getMarkdownFromSlug(slug, baseDir);
+export default async function Post(props: {
+  params: Promise<{ slug: string }>;
+}) {
+  const params = await props.params;
+  const result = await getMarkdownFromSlug(params.slug, baseDir);
 
   if (!result) {
     return <ErrorComponent error="The source could not be found !" />;

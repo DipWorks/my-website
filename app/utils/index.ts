@@ -13,9 +13,3 @@ export function getMarkdownExtension(
 
   return match![0].substring(1) as "md" | "mdx";
 }
-
-export const getSlug =async (params: {slug: string}): Promise<string>=>{
-  const {slug} =await params;
-  return slug;
-
-}
