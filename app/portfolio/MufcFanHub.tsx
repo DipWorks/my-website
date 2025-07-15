@@ -5,7 +5,7 @@ import MufcFanHubButton from "./MufcFanHubButton";
 
 const MufcFanHub = () => {
   return (
-    <Card className="ml-4">
+    <Card className="ml-4 mb-3">
       <Heading className={`${lobsterTwoFont.className} pb-4 pt-2`}>
         MUFC Fan HUb
       </Heading>
