@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <Card className="mr-4 mt-8 flex flex-col items-center text-center">
       <Heading className="p-4">Personal Projects (Hobbies)</Heading>
-      <div className="flex flex-row">
+      <div className="flex flex-col sm:flex-row">
         <MufcFanHub />
         <ContactInfo />
       </div>
