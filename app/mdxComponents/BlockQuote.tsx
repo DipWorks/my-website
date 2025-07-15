@@ -1,7 +1,9 @@
+import { Blockquote, BlockquoteProps } from "@radix-ui/themes";
+
 export default function BlockQuote(
-  props: React.ComponentPropsWithoutRef<"blockquote">,
+  props: BlockquoteProps,
 ) {
   const { children, ...rest } = props;
 
-  return <blockquote {...rest}>{children}</blockquote>;
+  return <Blockquote {...rest}>{children}</Blockquote>;
 }

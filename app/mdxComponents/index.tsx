@@ -4,7 +4,6 @@ import Link from "next/link";
 import type { MDXComponents } from "next-mdx-remote-client/rsc";
 
 import Button from "./Button";
-import CountButton from "./CountButton";
 import Hello from "./Hello";
 import Toc from "./Toc";
 import { default as pre } from "./Pre";
@@ -13,7 +12,6 @@ import BlockQuote, { default as blockquote } from "./BlockQuote";
 export const components: MDXComponents = {
   Toc,
   Button,
-  CountButton,
   Hello,
   Dynamic: dynamic(() => import("./dynamic")),
   strong: (props: React.ComponentPropsWithoutRef<"strong">) => (

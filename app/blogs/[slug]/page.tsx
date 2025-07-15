@@ -8,6 +8,7 @@ import { getOptions } from "@/utils/mdx";
 import { getMarkdownFromSlug } from "@/utils/file";
 import { components } from "@/mdxComponents";
 import CustomRemoteMdx from "@/components/CustomRemoteMdx";
+import { getSlug } from "@/utils";
 
 type Props = {
   params: { slug: string };
@@ -16,7 +17,8 @@ type Props = {
 const baseDir = "blogs";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const file = await getMarkdownFromSlug(params.slug, baseDir);
+  const slug = await getSlug(params);
+  const file = await getMarkdownFromSlug(slug, baseDir);
 
   if (!file) return {};
 
@@ -28,7 +30,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function Post({ params }: Props) {
-  const result = await getMarkdownFromSlug(params.slug, baseDir);
+  const slug = await getSlug(params);
+  const result = await getMarkdownFromSlug(slug, baseDir);
 
   if (!result) {
     return <ErrorComponent error="The source could not be found !" />;
