@@ -1,6 +1,7 @@
 import { Card, Heading } from "@radix-ui/themes";
 import React from "react";
 import MufcFanHub from "./MufcFanHub";
+import ContactInfo from "./ContactInfo";
 
 const Projects = () => {
   return (
@@ -8,6 +9,7 @@ const Projects = () => {
       <Heading className="p-4">Personal Projects (Hobbies)</Heading>
       <div className="flex flex-row">
         <MufcFanHub />
+        <ContactInfo />
       </div>
     </Card>
   );

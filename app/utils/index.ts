@@ -13,3 +13,11 @@ export function getMarkdownExtension(
 
   return match![0].substring(1) as "md" | "mdx";
 }
+
+export function getFormattedDate(dateString: string): string {
+  return new Date(dateString).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
