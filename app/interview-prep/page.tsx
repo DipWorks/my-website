@@ -1,4 +1,4 @@
-import { Card } from "@radix-ui/themes";
+import { Blockquote, Card, Heading, Text } from "@radix-ui/themes";
 import type { Metadata } from "next";
 import { getMarkdownFiles, getPostInformation } from "../utils/file";
 import { Post } from "../types";
@@ -18,15 +18,16 @@ export default async function InterviewPrep() {
 
   return (
     <Card className="mr-4 flex flex-col items-center text-center">
-      <div>
-        <p>
-          <strong>Welcome to my Interview Preparation Guide</strong>
-        </p>
-        <p>
-          Here, you will find everything that&apos;s needed to be ready for that
-          next interview
-          <strong> whenever that is scheduled !</strong>
-        </p>
+      <div className="p-2">
+        <Heading color="amber">Welcome to my Interview Preparation Guide.</Heading>
+        <div className="mt-3 mb-3">
+          <Text color="amber" highContrast>
+            Are you currently preparing or thinking about preparing for a technical interview? <Blockquote color="blue">You are in the
+            right spot.</Blockquote>
+            <br />
+            I will organise everything you need to be ready for that interview in one spot down below. Just grab your coffee and start today.
+          </Text>
+        </div>
         <ul>
           {posts.filter(Boolean).map((post) => (
             <li key={post.title}>
