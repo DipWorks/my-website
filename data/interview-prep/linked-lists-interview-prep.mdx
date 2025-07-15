@@ -1,0 +1,35 @@
+---
+title: "Linked Lists Explained for Interviews"
+description: "Understand Linked Lists, their types, operations, and how to ace interview questions with clear code examples."
+author: chatGPT
+date: "2025-07-13"
+tags: ["data structures", "linked list", "interview prep", "algorithms"]
+---
+
+# 🔗 Linked Lists for Interviews
+
+A **Linked List** is a linear data structure where each element (called a _node_) points to the next one. Unlike arrays, linked lists don’t require contiguous memory.
+
+---
+
+## 🧠 Why Use Linked Lists?
+
+- Dynamic size: Efficient insertions/deletions.
+- No memory reallocation like arrays.
+- Used in stacks, queues, and graphs.
+
+---
+
+## 🧱 Structure of a Node
+
+```ts
+class ListNode {
+  value: number;
+  next: ListNode | null;
+
+  constructor(value: number) {
+    this.value = value;
+    this.next = null;
+  }
+}
+```

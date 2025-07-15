@@ -1,6 +1,6 @@
 import { Blockquote, Card, Heading } from "@radix-ui/themes";
 import React from "react";
-import { lobsterTwoFont } from "../util/fonts";
+import { lobsterTwoFont } from "../utils/fonts";
 import MufcFanHubButton from "./MufcFanHubButton";
 
 const MufcFanHub = () => {

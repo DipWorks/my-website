@@ -1,7 +1,7 @@
 import { Card, Text } from "@radix-ui/themes";
 import React from "react";
 import Intro from "./Intro";
-import { lobsterTwoFont } from "../util/fonts";
+import { lobsterTwoFont } from "../utils/fonts";
 
 const Homepage = () => {
   return (

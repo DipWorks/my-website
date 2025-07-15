@@ -1,7 +1,7 @@
 import { Blockquote, Text } from "@radix-ui/themes";
 import React from "react";
 import PortfolioButton from "./PortfolioButton";
-import { tekurFont } from "../util/fonts";
+import { tekurFont } from "../utils/fonts";
 
 const Intro = () => {
   return (

@@ -5,11 +5,11 @@ import { Post } from "../types";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Blog Articles",
+  title: "Interview Preparation Guide",
 };
 
 export default async function InterviewPrep() {
-  const baseDir = "blogs";
+  const baseDir = "interview-prep";
   const files = getMarkdownFiles(baseDir);
 
   const posts = files
@@ -20,18 +20,21 @@ export default async function InterviewPrep() {
     <Card className="mr-4 flex flex-col items-center text-center">
       <div>
         <p>
-          <strong>Welcome to my Blogs</strong>
+          <strong>Welcome to my Interview Preparation Guide</strong>
         </p>
         <p>
-          Find what interestes you from the list below and
-          <strong> do not stop getting better for minute </strong>
+          Here, you will find everything that&apos;s needed to be ready for that
+          next interview
+          <strong> whenever that is scheduled !</strong>
         </p>
         <ul>
           {posts.filter(Boolean).map((post) => (
             <li key={post.title}>
               <Card>
                 <strong>
-                  <Link href={`/blogs/${post.slug}`}>{post.title}</Link>
+                  <Link href={`/interview-prep/${post.slug}`}>
+                    {post.title}
+                  </Link>
                 </strong>
                 <p>
                   <span>{String(post.date)}, </span>

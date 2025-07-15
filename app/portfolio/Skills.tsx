@@ -1,6 +1,6 @@
 import { Blockquote, Card, Heading } from "@radix-ui/themes";
 import React from "react";
-import { lobsterTwoFont } from "../util/fonts";
+import { lobsterTwoFont } from "../utils/fonts";
 
 const Skills = () => {
   return (
@@ -11,7 +11,7 @@ const Skills = () => {
       <Blockquote>
         <strong>Laguages </strong>
         <br />
-        Java, JavaScript, Html5, CSS3
+        Java, JavaScript, Typescript, Html5, CSS3
       </Blockquote>
       <br />
       <Blockquote>
@@ -27,7 +27,8 @@ const Skills = () => {
         CloudFormation,
         <br />
         AWS Serverless Architecutre, AWS ECS, <br /> Git Lab Version Control,
-        JUnit Testing, <br /> Bootstrap, Tailwind CSS, UNIX/LINUX Servers
+        JUnit Testing, <br /> Radix UI, Tailwind CSS, Styled Components, <br />
+        UNIX/LINUX Servers
       </Blockquote>
     </Card>
   );
