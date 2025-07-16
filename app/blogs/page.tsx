@@ -45,7 +45,7 @@ export default async function InterviewPrep() {
                     {getFormattedDate(String(post.date))}
                   </span>
                 </Text>
-                <p>{post.summary}</p>
+                <div className="pt-3 pb-3"><Text>{post.summary}</Text></div>
               </Card>
             </li>
           ))}
